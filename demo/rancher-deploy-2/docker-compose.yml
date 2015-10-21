@@ -1,6 +1,6 @@
-whoami-service-1:                       # Indicate the name of the service that will be replaced
+who-srv-1:                              # Indicate the name of the service that will be replaced
 # Empty
-whoami-service-2:                       # Name of the new service to replace whoami-service-1
+who-srv-2:                              # Name of the new service to replace whoami-service-1
   image: awilmore/whoami:0.0.2          # New image version specified: 0.0.2
   ports:
   - 8000/tcp                            # The port that will be exposed on this container

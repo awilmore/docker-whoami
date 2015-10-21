@@ -38,7 +38,7 @@ rancher-compose \
 CURL CHECK
 ----------
 
-curl http://52.64.10.140:8001
+curl http://rancher-demo.copper.sh:8001
 
 
 
@@ -46,4 +46,14 @@ UPGRADE COMMAND
 ---------------
 rancher-compose \
   --project-name "whoami-demo" \
-  upgrade whoami-service-1 whoami-service-2
+  upgrade who-srv-1 who-srv-2
+
+
+
+DELETE COMMAND
+--------------
+rancher-compose \
+  --project-name "whoami-demo" \
+  rm who-srv-1
+
+

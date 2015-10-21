@@ -14,6 +14,8 @@ docker run -d -p 8002:8000 whoami:0.0.2
 RANCHER KEY DETAILS
 -------------------
 
+NOTE - this is not real :)
+
 API KEY NAME
 rancher-demo-1
 

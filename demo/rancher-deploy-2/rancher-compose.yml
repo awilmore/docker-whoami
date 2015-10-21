@@ -1,4 +1,4 @@
 whoami-service-1:            # Name of the Rancher service being created here
-  scale: 3                   # Indicates a single instance of this application
+  scale: 5                   # Indicates a single instance of this application
 wilma-lb-1:                  # Name of the load balancer in this service
   scale: 1                   # Indicates a single instance of this load balancer

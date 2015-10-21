@@ -1,0 +1,13 @@
+whoami-service-1:                       # Name of the Rancher service for this exercise
+  image: awilmore/whoami:0.0.1          # Version of the whoami image to deploy, ie. 0.0.1
+  ports:
+  - 8000/tcp                            # The port that will be exposed on this container
+whoami-lb-1:
+  image: rancher/load-balancer-service  # Name of the load balancer service
+  restart: always
+  ports:
+  - 8001:8000                           # Port mapping, where 8001 is exposed on the host and will forward traffic to 8000 on the container
+  tty: true
+  links:
+  - whoami-service-1:whoami-service-1
+  stdin_open: true
